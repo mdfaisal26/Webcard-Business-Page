@@ -22,8 +22,8 @@
                             </div>
                             <div class="add-content">
                                 <h5>Phone</h5>
-                                <p><a href="" style="text-decoration:none">+(91) 74112 42726</a></p>
-                                <p><a href="" style="text-decoration:none">+(91) 77950 77266</a></p>
+                                <p><a href="7411242726" style="text-decoration:none">+(91) 74112 42726</a></p>
+                                <p><a href="7795077266" style="text-decoration:none">+(91) 77950 77266</a></p>
                             </div>
                         </div>
                     </div>
