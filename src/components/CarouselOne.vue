@@ -23,23 +23,21 @@
 </template>
   
 <script>
+
 export default {
     name: 'CarouselOne',
     data() {
         return {
             activeIndex: 0,
             carouselItems: [
-                { src: 'https://bsmedia.business-standard.com/_media/bs/img/article/2017-12/12/full/1513058323-566.jpg?im=FeatureCrop,size=(826,465)', alt: 'First slide' },
-                { src: 'https://assets.vogue.in/photos/5dfa4b8f7c02da0008038ed8/4:3/w_1079,h_809,c_limit/Priyanka%20Chopra%20and%20Nick%20Jonas.jpg', alt: 'Third slide' },
-                { src: 'https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2018/10/Celebrity-Wedding-Feature.jpg?tr=w-600,pr-true', alt: 'Third slide' },
-                { src: 'https://www.weddingsutra.com/images/athiya-rahul-thumb-350x350.jpg', alt: 'Third slide' },
-                { src: 'https://cdn.bollywoodmdb.com/fit-in/800x800/post/news_desc/BCM221_1670670494359.jpg', alt: 'Third slide' },
-                { src: 'https://cdn.bollywoodmdb.com/fit-in/800x800/post/news_desc/BCM221_1670670494359.jpg', alt: 'Third slide' },
-                { src: 'https://www.pinkvilla.com/english/images/2023/05/843201419_alia-bhatt-main-cover_3_1280*720.jpg', alt: 'Third slide' },
-                { src: 'https://assets.telegraphindia.com/telegraph/2022/Dec/1671788341_vikrant.jpg', alt: 'Third slide' },
-                { src: 'https://im.idiva.com/photogallery/2020/Aug/iDiva-Unseen-Bollywood-Celebrity-Wedding-Photos_1_5f296507b6763.jpg?w=600&h=450&cc=1', alt: 'Third slide' },
-                { src: 'https://cdn.bollywoodmdb.com/fit-in/800x800/post/news_desc/c_1641665088679.jpg', alt: 'Third slide' },
-                // Add more items as needed
+                { src: require('../assets/CarousalPics/1.jpg'), alt: 'First slide' },
+                { src: require('../assets/CarousalPics/2.jpg'), alt: 'Second slide' },
+                { src: require('../assets/CarousalPics/3.jpg'), alt: 'Third slide' },
+                { src: require('../assets/CarousalPics/4.jpg'), alt: 'Fourth slide' },
+                { src: require('../assets/CarousalPics/5.jpg'), alt: 'Fifth slide' },
+                { src: require('../assets/CarousalPics/6.webp'), alt: 'Sixth slide' },
+                { src: require('../assets/CarousalPics/7.webp'), alt: 'Seventh slide' },
+                // { src: '', alt: '' }
             ],
             intervalId: null,
         };
@@ -76,7 +74,7 @@ export default {
 
 .carousel-img {
     margin: 30px 60px;
-    height: 60vh;
+    height: 70vh;
     width: 100vb;
 }
 
