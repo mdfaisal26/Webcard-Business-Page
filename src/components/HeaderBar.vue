@@ -1,14 +1,16 @@
 <template>
   <div id="headerContainer">
-    <div style="height: 67px;" class="bg-dark"></div>
+    <div style="height: 67px" class="bg-dark"></div>
     <div class="nav bg-dark">
       <div class="container">
-        <h1 class="logo"><a href="/"><i class="fa-solid fa-moon"></i> Web Card</a></h1>
+        <h1 class="logo">
+          <a href="/">Web Card &nbsp;<i class="fa-solid fa-heart"></i></a>
+        </h1>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><router-link to="/about">About Us</router-link></li>
-          <!-- <li><a href="/">Services</a></li> -->
-          <li><a v-on:click="scrollToFooter">Contact</a></li>
+          <li><a v-on:click="scrollTo('mainPage')">Home</a></li>
+          <li><a v-on:click="scrollTo('sampleProjects')">Sample Projects</a></li>
+          <li><router-link v-on:click="scrollTo('aboutUsContainer')" to="/about">About Us</router-link></li>
+          <li><a v-on:click="scrollTo('footerContainer')">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -16,26 +18,26 @@
 </template>
 
 <script>
-
 export default {
-  name: 'HeaderBar',
+  name: "HeaderBar",
   methods: {
-
-    scrollToFooter(event) {
-      // Check if the clicked link is the "Contact" link
-      if (event.target.innerText.toLowerCase() === 'contact') {
-        // Get the footer element by ID
-        const footer = document.getElementById('footerContainer');
-
-        // Scroll to the footer using smooth behavior
-        footer.scrollIntoView({ behavior: 'smooth' });
+    scrollTo(scrollid) {
+      const scrollTop = ["aboutUsContainer", "mainPage"];
+      if (scrollTop.includes(scrollid)) {
+        if (scrollid == "mainPage") {
+          this.$router.push("/");
+        }
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        this.$router.push("/").then(() => {
+          const scrollPage = document.getElementById(scrollid);
+          scrollPage.scrollIntoView({ behavior: "smooth" });
+        });
       }
     }
   }
-
-}
+};
 </script>
-
 
 <style scoped>
 .nav {
@@ -72,6 +74,9 @@ export default {
   padding: 7px 15px;
   font-weight: 300;
   transition: var(--main-transition);
+  display: flex;
+  text-align: center;
+  font-size: 12px;
 }
 
 .nav.active a:hover {
@@ -86,6 +91,7 @@ export default {
 .nav a.current,
 .nav a:hover {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 .nav a.current {
@@ -121,20 +127,29 @@ export default {
   padding: 20px 0;
 }
 
-
+h1 {
+  margin: unset;
+}
 
 @media (max-width: 700px) {
   .hero h1 {
     font-size: 30px;
   }
-
+  ol,
+  ul {
+    padding: unset;
+  }
   .nav .container {
     display: flex;
     flex-direction: column;
   }
 
   .nav .logo {
-    display: none;
+    /* display: none; */
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    width: 60%;
   }
 }
 </style>
