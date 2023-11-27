@@ -1,10 +1,10 @@
 <template>
   <div id="headerContainer">
-    <div style="height: 67px" class="bg-dark"></div>
+    <div class="bg-dark emptyHeader"></div>
     <div class="nav bg-dark">
       <div class="container">
         <h1 class="logo">
-          <a href="/">Web Card &nbsp;<i class="fa-solid fa-heart"></i></a>
+          <a class="headerTitle" href="/">Web Card &nbsp;<i class="fa-solid fa-heart headerTitle"></i></a>
         </h1>
         <ul>
           <li><a v-on:click="scrollTo('mainPage')">Home</a></li>
@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style scoped>
+.emptyHeader {
+  height: 67px;
+}
+
+.headerTitle {
+  font-size: 18px !important;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -76,6 +84,7 @@ export default {
   transition: var(--main-transition);
   display: flex;
   text-align: center;
+  align-items: center;
   font-size: 12px;
 }
 
@@ -132,6 +141,10 @@ h1 {
 }
 
 @media (max-width: 700px) {
+  .nav.active .container,
+  .nav .container {
+    padding: 10px 0;
+  }
   .hero h1 {
     font-size: 30px;
   }
@@ -149,7 +162,14 @@ h1 {
     border-bottom: 1px solid grey;
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .headerTitle {
+    font-size: 18px !important;
+  }
+  .emptyHeader {
+    height: 120px;
   }
 }
 </style>
