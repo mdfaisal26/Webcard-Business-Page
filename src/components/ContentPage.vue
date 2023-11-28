@@ -7,20 +7,24 @@
     <h2>Make your day memoriable with us</h2>
     <p>We will make you the best invitaiton which people can't decline whom you love.</p>
     <CarouselOne />
-    <div class="projects" id="sampleProjects">
+    <div class="projects" id="">
       <a href="https://webcard-2.netlify.app/" role="button" target="_blank">
-        <h2>Sample Projects</h2>
+        <h2 id="sampleProjects">Sample Projects</h2>
       </a>
     </div>
+    <EasySteps />
   </section>
 </template>
+
 <script>
 import CarouselOne from "./CarouselOne.vue";
+import EasySteps from "./EasySteps.vue";
 
 export default {
   name: "ContentPage",
   components: {
-    CarouselOne
+    CarouselOne,
+    EasySteps
   }
 };
 </script>
@@ -90,20 +94,25 @@ i {
 }
 
 .projects a h2 {
-  padding: 8px;
+  padding: 10px 16px;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
-  color: #222;
-  border-radius: 5px;
-  border: 1px solid black;
+  color: #fff;
+  background-color: rgb(181, 11, 33);
+  border-radius: 25px;
 }
 
 .projects a h2:hover {
   color: #fff;
-  background-color: #555;
+  background-color: rgb(139, 14, 31);
+  /* border: 3px solid rgb(139, 14, 31); */
 }
 
 @media only screen and (max-width: 767px) {
+  .projects a h2 {
+    font-size: 18px;
+  }
+
   .hero {
     height: 40vh;
   }
