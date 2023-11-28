@@ -31,7 +31,8 @@ export default {
       } else {
         this.$router.push("/").then(() => {
           const scrollPage = document.getElementById(scrollid);
-          scrollPage.scrollIntoView({ behavior: "smooth" });
+          const topOffset = scrollPage.offsetTop - 150; // Adjusted for 80px margin
+          window.scrollTo({ top: topOffset, behavior: "smooth" });
         });
       }
     }
