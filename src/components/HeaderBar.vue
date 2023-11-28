@@ -17,6 +17,7 @@
   </div>
 </template>
 
+
 <script>
 export default {
   name: "HeaderBar",
@@ -31,7 +32,7 @@ export default {
       } else {
         this.$router.push("/").then(() => {
           const scrollPage = document.getElementById(scrollid);
-          const topOffset = scrollPage.offsetTop - 150; // Adjusted for 80px margin
+          const topOffset = scrollPage.offsetTop - 130; // Adjusted for 130px margin
           window.scrollTo({ top: topOffset, behavior: "smooth" });
         });
       }
@@ -166,6 +167,7 @@ h1 {
     width: 50%;
     margin-bottom: 15px;
   }
+
   .headerTitle {
     font-size: 18px !important;
   }
