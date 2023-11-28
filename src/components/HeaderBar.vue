@@ -45,6 +45,7 @@ export default {
 .emptyHeader {
   height: 67px;
 }
+
 .headerTitle {
   font-size: 18px !important;
 }
