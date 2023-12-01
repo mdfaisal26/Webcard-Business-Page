@@ -22,8 +22,17 @@
               </div>
               <div class="add-content">
                 <h6>Mohammed Faisal</h6>
-                <p><a href="tel:7411242726" style="text-decoration: none">+(91) 74112 42726</a></p>
-                <p><a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none">mdfaisal2699@gmail.com</a></p>
+                <div class="footerIcon">
+                  <a href="tel:7411242726" style="text-decoration: none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
+                  <a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                  <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917411242726')"></i>
+                </div>
+                <p>
+                  <a href="http://wa.me/917411242726" style="text-decoration: none"> +(91) 74112 42726</a>
+                </p>
+                <p>
+                  <a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none"> mdfaisal2699@gmail.com</a>
+                </p>
               </div>
             </div>
           </div>
@@ -35,8 +44,17 @@
               </div>
               <div class="add-content">
                 <h6>Hassan Mohammed Nabeel</h6>
-                <p><a href="tel:7795077266" style="text-decoration: none">+(91) 77950 77266</a></p>
-                <p><a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none">hassaninbox17@gmail.com</a></p>
+                <div class="footerIcon">
+                  <a href="tel:7795077266" style="text-decoration: none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
+                  <a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                  <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917795077266')"></i>
+                </div>
+                <p>
+                  <a href="http://wa.me/917795077266" style="text-decoration: none"> +(91) 77950 77266</a>
+                </p>
+                <p>
+                  <a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none"> hassaninbox17@gmail.com</a>
+                </p>
               </div>
             </div>
           </div>
@@ -53,6 +71,8 @@
             <i class="fa-brands fa-instagram fa-2xl"></i>
             <!-- Fb -->
             <i class="fa-brands fa-facebook fa-2xl"></i>
+            <!-- WhatsApp -->
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
           </section>
           <!-- Section: Social media -->
         </div>
@@ -93,6 +113,24 @@ export default {
   padding-top: 36px;
 }
 
+.footerIcon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 30px;
+  margin: 10px 0;
+}
+
+a {
+  color: unset;
+}
+
+i:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+
 .address-main > div.col-lg-4 {
   border-bottom: dotted 1px #999;
   display: flex;
@@ -128,7 +166,7 @@ export default {
   color: #ffffff;
   padding: 0;
   font-weight: 400;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .add-content h6 {
@@ -144,6 +182,7 @@ export default {
   font-size: 14px;
   color: #efefef;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .add-content p a:hover,

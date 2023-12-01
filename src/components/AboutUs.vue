@@ -12,6 +12,7 @@
             <!-- <h6 class="mt-2">P.S I have no special talent, I'm just passionately curious ;)</h6> -->
             <div>
               <i class="fa-brands fa-instagram fa-2xl mt-4" @click="openUrlInNewTab('https://instagram.com/md_faisal_26?igshid=NzZlODBkYWE4Ng==')"></i>
+              <i class="fa-brands fa-whatsapp fa-2xl mt-4" @click="openUrlInNewTab('http://wa.me/917411242726')"></i>
               <i class="fa-brands fa-linkedin fa-2xl" @click="openUrlInNewTab('https://www.linkedin.com/in/mohammedfaisal26/')"> </i>
             </div>
           </div>
@@ -25,6 +26,7 @@
             <h6></h6>
             <div class="">
               <i class="fa-brands fa-instagram fa-2xl mt-4" @click="openUrlInNewTab('https://instagram.com/hassan.hmn?igshid=NzZlODBkYWE4Ng==')"></i>
+              <i class="fa-brands fa-whatsapp fa-2xl mt-4" @click="openUrlInNewTab('http://wa.me/917795077266')"></i>
               <i class="fa-brands fa-linkedin fa-2xl" @click="openUrlInNewTab('https://www.linkedin.com/in/hassan-mohammed-nabeel/')"> </i>
             </div>
           </div>
@@ -84,6 +86,9 @@ body {
 
 .bio-content {
   text-align: left;
+}
+.bio-content div i {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
