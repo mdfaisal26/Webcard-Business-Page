@@ -143,17 +143,21 @@ h1 {
 }
 
 @media (max-width: 700px) {
+
   .nav.active .container,
   .nav .container {
     padding: 10px 0;
   }
+
   .hero h1 {
     font-size: 30px;
   }
+
   ol,
   ul {
     padding: unset;
   }
+
   .nav .container {
     display: flex;
     flex-direction: column;
@@ -171,8 +175,8 @@ h1 {
   .headerTitle {
     font-size: 18px !important;
   }
+
   .emptyHeader {
     height: 120px;
   }
-}
-</style>
+}</style>

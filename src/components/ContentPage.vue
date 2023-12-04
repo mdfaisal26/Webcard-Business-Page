@@ -13,18 +13,22 @@
       </a>
     </div>
     <EasySteps />
+    <WhyWedCard />
+
   </section>
 </template>
 
 <script>
 import CarouselOne from "./CarouselOne.vue";
 import EasySteps from "./EasySteps.vue";
+import WhyWedCard from "./WhyWedCard.vue";
 
 export default {
   name: "ContentPage",
   components: {
     CarouselOne,
-    EasySteps
+    EasySteps,
+    WhyWedCard,
   }
 };
 </script>
