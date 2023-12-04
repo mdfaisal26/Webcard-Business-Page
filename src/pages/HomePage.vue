@@ -66,4 +66,12 @@ p {
   flex-direction: column;
   min-height: 100vh;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
 </style>

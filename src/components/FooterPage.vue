@@ -17,18 +17,21 @@
           <div class="col-lg-4 col-sm-12 col-xs-12">
             <div class="address-box clearfix">
               <div class="add-icon">
-                <img src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY" alt="image" />
+                <img
+                  src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY"
+                  alt="image" />
                 <!-- <i class="fa-solid fa-phone fa-2xl"></i> -->
               </div>
               <div class="add-content">
                 <h6>Mohammed Faisal</h6>
                 <div class="footerIcon">
                   <a href="tel:7411242726" style="text-decoration: none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
-                  <a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                  <a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none"><i
+                      class="fa-regular fa-envelope fa-xl mr-4"></i></a>
                   <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917411242726')"></i>
                 </div>
                 <p>
-                  <a href="http://wa.me/917411242726" style="text-decoration: none"> +(91) 74112 42726</a>
+                  <a href="tel:7411242726" style="text-decoration: none"> +(91) 74112 42726</a>
                 </p>
                 <p>
                   <a href="mailto:mdfaisal2699@gmail.com" style="text-decoration: none"> mdfaisal2699@gmail.com</a>
@@ -39,18 +42,21 @@
           <div class="col-lg-4 col-sm-12 col-xs-12">
             <div class="address-box clearfix">
               <div class="add-icon">
-                <img src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs" alt="image" />
+                <img
+                  src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs"
+                  alt="image" />
                 <!-- <i class="fa-regular fa-envelope fa-2xl"></i> -->
               </div>
               <div class="add-content">
                 <h6>Hassan Mohammed Nabeel</h6>
                 <div class="footerIcon">
                   <a href="tel:7795077266" style="text-decoration: none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
-                  <a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                  <a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none"><i
+                      class="fa-regular fa-envelope fa-xl mr-4"></i></a>
                   <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917795077266')"></i>
                 </div>
                 <p>
-                  <a href="http://wa.me/917795077266" style="text-decoration: none"> +(91) 77950 77266</a>
+                  <a href="tel:7795077266" style="text-decoration: none"> +(91) 77950 77266</a>
                 </p>
                 <p>
                   <a href="mailto:hassaninbox17@gmail.com" style="text-decoration: none"> hassaninbox17@gmail.com</a>
@@ -131,7 +137,7 @@ i:hover {
   cursor: pointer;
 }
 
-.address-main > div.col-lg-4 {
+.address-main>div.col-lg-4 {
   border-bottom: dotted 1px #999;
   display: flex;
 }

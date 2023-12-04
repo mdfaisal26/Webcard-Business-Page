@@ -46,5 +46,10 @@ export default {
   padding: 10px;
   border-radius: 50%;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+#scrollToTopButton i {
+  width: 16px;
 }
 </style>
