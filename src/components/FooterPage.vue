@@ -1,7 +1,7 @@
 <template>
   <div id="footerContainer">
     <footer class="bg-dark">
-      <div class="container">
+      <div class="container pt-2">
         <div class="row address-main">
           <div class="col-lg-4 col-sm-12 col-xs-12">
             <div class="address-box clearfix">
@@ -70,9 +70,9 @@
       <!-- Copyright Footer -->
       <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
-        <div class="container p-4 pb-0">
+        <div class="container pt-3 pb-3">
           <!-- Section: Social media -->
-          <section class="mb-4 social-media">
+          <section class="social-media">
             <!-- Instagram -->
             <i class="fa-brands fa-instagram fa-2xl"></i>
             <!-- Fb -->
@@ -85,7 +85,7 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
           Faisal & Hassan © <span>{{ currentYear }}</span> All Rights Reserved.
         </div>
         <!-- Copyright -->
@@ -144,7 +144,7 @@ i:hover {
 
 .address-box {
   padding: 10px 0;
-  margin: 20px 0;
+  margin: 5px 0;
   display: flex;
   justify-content: flex-start;
 }
