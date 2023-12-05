@@ -44,7 +44,7 @@ i {
 }
 
 .hero {
-  background-image: url("https://interactive.cntraveller.in/destination-wedding-guide/assets/img/ShangriLa2-1920x1080.jpg");
+  background-image: url("../assets/Wed-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

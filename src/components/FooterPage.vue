@@ -63,21 +63,13 @@
 
       <!-- Copyright Footer -->
       <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container pt-3 pb-3">
-          <!-- Section: Social media -->
+        <!-- <div class="container pt-3 pb-3">
           <section class="social-media">
-            <!-- Instagram -->
             <i class="fa-brands fa-instagram fa-2xl"></i>
-            <!-- Fb -->
             <i class="fa-brands fa-facebook fa-2xl"></i>
-            <!-- WhatsApp -->
             <i class="fa-brands fa-whatsapp fa-2xl"></i>
           </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-
+        </div> -->
         <!-- Copyright -->
         <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
           Faisal & Hassan © <span>{{ currentYear }}</span> All Rights Reserved.
