@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <div>An invitation to unforgettable moments</div>
+    <div>Where Celebrations Unite: One Invite, Infinite Delight</div>
   </div>
 
   <section class="container content d-flex flex-column align-items-center">
@@ -9,12 +9,11 @@
     <CarouselOne />
     <div class="projects" id="">
       <a href="https://webcard-2.netlify.app/" role="button" target="_blank">
-        <h2 id="sampleProjects">Sample Projects</h2>
+        <h4 id="sampleProjects">Sample Projects</h4>
       </a>
     </div>
     <EasySteps />
     <WhyWedCard />
-
   </section>
 </template>
 
@@ -28,7 +27,7 @@ export default {
   components: {
     CarouselOne,
     EasySteps,
-    WhyWedCard,
+    WhyWedCard
   }
 };
 </script>
@@ -70,7 +69,7 @@ i {
   background-color: #222222b8;
   color: white;
   /* mix-blend-mode: color-dodge; */
-  font-size: 40px;
+  font-size: 30px;
   padding: 5px 10px;
 }
 
@@ -97,7 +96,7 @@ i {
   text-decoration: none;
 }
 
-.projects a h2 {
+.projects a h4 {
   padding: 10px 16px;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
@@ -106,14 +105,14 @@ i {
   border-radius: 25px;
 }
 
-.projects a h2:hover {
+.projects a h4:hover {
   color: #fff;
   background-color: rgb(139, 14, 31);
   /* border: 3px solid rgb(139, 14, 31); */
 }
 
 @media only screen and (max-width: 767px) {
-  .projects a h2 {
+  .projects a h4 {
     font-size: 18px;
   }
 
@@ -123,10 +122,10 @@ i {
 
   .hero div {
     font-weight: 500;
-    background-color: #222222b8;
-    color: white;
+    /* background-color: #222222b8;
+    color: white; */
     /* mix-blend-mode: color-dodge; */
-    font-size: 24px;
+    font-size: 18px;
     padding: 5px 10px;
   }
 }
