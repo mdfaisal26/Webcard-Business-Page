@@ -26,7 +26,7 @@ export default {
     window.addEventListener("scroll", fixNav);
 
     function fixNav() {
-      if (window.scrollY > nav.offsetHeight + 10) {
+      if (window.scrollY > nav.offsetHeight - 10) {
         nav.classList.add("active");
         nav.classList.remove("bg-dark");
       } else {
@@ -69,9 +69,5 @@ p {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.text-decoration-none {
-  text-decoration: none;
 }
 </style>
