@@ -9,7 +9,7 @@
     <CarouselOne />
     <div class="projects" id="">
       <a href="https://webcard-2.netlify.app/" role="button" target="_blank">
-        <div id="sampleProjects">Sample Projects</div>
+        <div id="sampleProjects">Sample Wedding Invitaiton</div>
       </a>
     </div>
     <EasySteps />

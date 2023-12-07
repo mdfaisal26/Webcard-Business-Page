@@ -4,20 +4,21 @@
     <div class="list-container">
       <div>
         <i class="fa-solid fa-circle-check"></i>
-        <p>Pose for your Pre-Wedding glee, Let us display it for all to see!</p>
+        <p>Pose for your pre-wedding glee, Let us display it for all to see!</p>
       </div>
       <div>
         <i class="fa-solid fa-circle-check"></i>
-        <p>Show case your Event's Best Photos of Reception, Haldi, Mehendi on the Big Day!</p>
+        <p>Show case your event's best photos of reception, haldi, mehendi on the big day!</p>
       </div>
       <div>
         <i class="fa-solid fa-circle-check"></i>
-        <p>Digitalize your wedding card with your QR code! No multiple URLs to share! Everything happens within your personalised website.</p>
+        <p>Digitalize your wedding card with your QR code! No multiple URLs to share! Everything happens within your
+          personalised website.</p>
       </div>
     </div>
     <div class="faq-bt">
       <div class="btn btn-secondary">
-        <router-link v-on:click="scrollTo('FAQ')" to="/FAQ">FAQ</router-link>
+        <router-link v-on:click="scrollTo('FAQ')" to="/FAQ">FAQ's</router-link>
       </div>
     </div>
   </section>
