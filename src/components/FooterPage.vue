@@ -15,14 +15,17 @@
           </div> -->
           <div class="address-box">
             <div class="add-icon">
-              <img src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY" alt="image" />
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY"
+                alt="image" />
               <!-- <i class="fa-solid fa-phone fa-2xl"></i> -->
             </div>
             <div class="add-content">
               <h6>Faisal</h6>
               <div class="footerIcon">
                 <a href="tel:7411242726" class="text-decoration-none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
-                <a href="mailto:mdfaisal2699@gmail.com" class="text-decoration-none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                <a href="mailto:mdfaisal2699@gmail.com" class="text-decoration-none"><i
+                    class="fa-regular fa-envelope fa-xl mr-4"></i></a>
                 <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917411242726')"></i>
               </div>
               <p>
@@ -35,14 +38,17 @@
           </div>
           <div class="address-box">
             <div class="add-icon">
-              <img src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs" alt="image" />
+              <img
+                src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs"
+                alt="image" />
               <!-- <i class="fa-regular fa-envelope fa-2xl"></i> -->
             </div>
             <div class="add-content">
               <h6>Hassan</h6>
               <div class="footerIcon">
                 <a href="tel:7795077266" class="text-decoration-none"><i class="fa-solid fa-phone fa-l mr-4"></i></a>
-                <a href="mailto:hassaninbox17@gmail.com" class="text-decoration-none"><i class="fa-regular fa-envelope fa-xl mr-4"></i></a>
+                <a href="mailto:hassaninbox17@gmail.com" class="text-decoration-none"><i
+                    class="fa-regular fa-envelope fa-xl mr-4"></i></a>
                 <i class="fa-brands fa-whatsapp fa-xl mr-4" @click="openUrlInNewTab('http://wa.me/917795077266')"></i>
               </div>
               <p>
@@ -92,7 +98,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #footerContainer {
   margin-top: auto;
 }
@@ -188,8 +194,7 @@ i:hover {
     flex-direction: column;
   }
 
-  .address-main > div:first-child {
+  .address-main>div:first-child {
     border-bottom: dotted 1px #999;
   }
-}
-</style>
+}</style>
