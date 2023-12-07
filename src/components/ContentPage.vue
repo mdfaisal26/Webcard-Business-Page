@@ -9,7 +9,7 @@
     <CarouselOne />
     <div class="projects" id="">
       <a href="https://webcard-2.netlify.app/" role="button" target="_blank">
-        <h4 id="sampleProjects">Sample Projects</h4>
+        <div id="sampleProjects">Sample Projects</div>
       </a>
     </div>
     <EasySteps />
@@ -96,23 +96,23 @@ i {
   text-decoration: none;
 }
 
-.projects a h4 {
-  padding: 10px 16px;
-  font-size: 24px;
+.projects a div {
+  padding: 8px 12px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   color: #fff;
   background-color: rgb(181, 11, 33);
   border-radius: 25px;
 }
 
-.projects a h4:hover {
+.projects a div:hover {
   color: #fff;
   background-color: rgb(139, 14, 31);
   /* border: 3px solid rgb(139, 14, 31); */
 }
 
 @media only screen and (max-width: 767px) {
-  .projects a h4 {
+  .projects a div {
     font-size: 18px;
   }
 
