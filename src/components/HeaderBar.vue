@@ -8,8 +8,8 @@
         </h1>
         <ul>
           <li><a v-on:click="scrollTo('mainPage')">Home</a></li>
-          <li><a v-on:click="scrollTo('sampleProjects')">Sample Projects</a></li>
-          <li><router-link v-on:click="scrollTo('aboutUsContainer')" to="/about">About Us</router-link></li>
+          <li><a v-on:click="scrollTo('sampleProjects')">Sample invitaiton</a></li>
+          <li><router-link v-on:click="scrollTo('aboutUsContainer')" to="/about">About us</router-link></li>
           <li><a v-on:click="scrollTo('footerContainer')">Contact</a></li>
         </ul>
       </div>

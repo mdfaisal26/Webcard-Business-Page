@@ -61,6 +61,10 @@ p {
   margin-bottom: 2px;
 }
 
+a {
+  color: unset;
+}
+
 #mainPage {
   display: flex;
   flex-direction: column;
