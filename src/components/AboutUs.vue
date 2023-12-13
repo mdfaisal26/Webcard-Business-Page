@@ -8,7 +8,7 @@
         <div class="col-md-6">
           <div class="bio-content">
             <h4>Hi there, I'm Faisal</h4>
-            <p>I am Co-founder and CEO for Web Card. Weekday I am coder in weekend I build business.</p>
+            <p>Co-founder and CEO for Web Card. Weekday I am coder in weekend I build business.</p>
             <!-- <h6 class="mt-2">P.S I have no special talent, I'm just passionately curious ;)</h6> -->
             <div>
               <i class="fa-brands fa-instagram fa-2xl mt-4" @click="openUrlInNewTab('https://instagram.com/md_faisal_26?igshid=NzZlODBkYWE4Ng==')"></i>

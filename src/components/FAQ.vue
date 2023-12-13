@@ -42,11 +42,11 @@ export default {
         },
         {
           question: "Is this service charged?",
-          answer: "Yes, we charge for all our invites. Our digital invitations price starts from ₹2999 each, and increases as per your requirments. Video invites price starts from ₹3499."
+          answer: "Yes, our service does have a charge, but we make sure it's pocket-friendly. We offer personalized invitations that fit your budget without compromising on quality."
         },
         {
           question: "For how long can I keep my website live?",
-          answer: "Your website will remain live for 2 weeks post your event date. If you want it to remain live post 2 weeks, you can purchase the post-event website for ₹1,499, which will allow it to stay live for 6 months post the event. "
+          answer: "Your website will remain live for 2 weeks post your event date. If you wish to extend this duration, you can purchase the post-event website option for affordable price, providing an additional 6 months of access post the event. "
         }
       ]
     };
