@@ -17,7 +17,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "HeaderBar",
@@ -143,7 +142,6 @@ h1 {
 }
 
 @media (max-width: 700px) {
-
   .nav.active .container,
   .nav .container {
     padding: 10px 0;
@@ -179,4 +177,12 @@ h1 {
   .emptyHeader {
     height: 120px;
   }
-}</style>
+
+  a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+</style>
