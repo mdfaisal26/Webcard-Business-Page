@@ -16,7 +16,7 @@
           <div class="address-box">
             <div class="add-icon">
               <img
-                src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY"
+                src="../assets/Faisal img.jpeg"
                 alt="image" />
               <!-- <i class="fa-solid fa-phone fa-2xl"></i> -->
             </div>
@@ -39,7 +39,7 @@
           <div class="address-box">
             <div class="add-icon">
               <img
-                src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs"
+                src="../assets/Hassan img.jpeg"
                 alt="image" />
               <!-- <i class="fa-regular fa-envelope fa-2xl"></i> -->
             </div>
