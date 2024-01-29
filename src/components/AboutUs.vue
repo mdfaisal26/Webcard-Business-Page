@@ -3,7 +3,7 @@
     <section class="container portfolio">
       <div class="bio-info d-flex justify-content-sm-around align-items-center">
         <div class="bio-image">
-          <img src="https://media.licdn.com/dms/image/C5603AQGFoAgFxK9SjA/profile-displayphoto-shrink_800_800/0/1650982035553?e=1706140800&v=beta&t=7lG24B1yflncaiBPM1Q1M_WjSV1ESwb8yimwNC1ozjY" alt="image" />
+          <img src="../assets/Faisal img.jpeg" alt="image" />
         </div>
         <div class="col-md-6">
           <div class="bio-content">
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="bio-image">
-          <img src="https://media.licdn.com/dms/image/C5603AQHui__Hf7pLqQ/profile-displayphoto-shrink_800_800/0/1649415671325?e=1706140800&v=beta&t=l9M-7uyqxyVAg2eL1HYD2wtpDXEd9T-7eE8SpMxqCWs" alt="image" />
+          <img src="../assets/Hassan img.jpeg" alt="image" />
         </div>
       </div>
     </section>
