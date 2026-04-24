@@ -1,21 +1,38 @@
 <template>
-  <section class="mt-2 mb-2" id="FAQ">
-    <h3 class="faq-header">FAQ's</h3>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div class="accordion-item" v-for="(item, index) in faqItems" :key="index">
-        <h2 :id="'panelsStayOpen-heading' + index">
-          <button :class="['accordion-button', { collapsed: index !== 0 }]" type="button" :data-bs-toggle="'collapse'" :data-bs-target="'#panelsStayOpen-collapse' + index" :aria-expanded="false" :aria-controls="'panelsStayOpen-collapse' + index">
-            {{ item.question }}
-          </button>
-        </h2>
-        <div :id="'panelsStayOpen-collapse' + index" :class="['accordion-collapse', 'collapse', { show: index === 0 }]" :aria-labelledby="'panelsStayOpen-heading' + index">
-          <div class="accordion-body">
-            {{ item.answer }}
+  <div id="FAQ">
+    <section class="faq-hero">
+      <div class="faq-hero-content">
+        <h1 class="animate-fade-in">Frequently Asked Questions</h1>
+        <p class="animate-fade-in-delay">Everything you need to know about Web Card</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-card" v-for="(item, index) in faqItems" :key="index">
+            <div class="faq-question" @click="toggleFaq(index)">
+              <h3>{{ item.question }}</h3>
+              <i :class="activeFaq === index ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down'"></i>
+            </div>
+            <transition name="slide-fade">
+              <div v-if="activeFaq === index" class="faq-answer">
+                <p>{{ item.answer }}</p>
+              </div>
+            </transition>
           </div>
         </div>
+
+        <div class="faq-cta">
+          <h2>Still have questions?</h2>
+          <p>We're here to help! Reach out to us anytime.</p>
+          <a href="https://wa.me/917411242726?text=Hi!%20I%20have%20a%20question%20about%20Web%20Card" target="_blank" class="btn-contact">
+            <i class="fa-brands fa-whatsapp"></i> Chat with Us
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -23,6 +40,7 @@ export default {
   name: "FAQ",
   data() {
     return {
+      activeFaq: 0,
       faqItems: [
         {
           question: "What kind of invites can I create at WedCard?",
@@ -50,38 +68,271 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    toggleFaq(index) {
+      this.activeFaq = this.activeFaq === index ? null : index;
+    }
   }
 };
 </script>
 
 <style scoped>
-section {
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.faq-header {
+/* FAQ Hero Section */
+.faq-hero {
+  background: linear-gradient(135deg, #8b4789 0%, #a876aa 50%, #d4af37 100%);
+  padding: 100px 20px 80px;
   text-align: center;
-  margin: 20px 0 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.accordion {
+.faq-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/Wed-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+}
+
+.faq-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-hero h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.faq-hero p {
+  font-size: 22px;
+  color: #fff;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-grid {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faq-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  box-shadow: 0 8px 30px rgba(139, 71, 137, 0.15);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  padding: 25px 30px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: linear-gradient(90deg, transparent 0%, rgba(139, 71, 137, 0.03) 100%);
 }
 
-.accordion-item {
-  margin: 10px 10px;
-  width: 80%;
+.faq-question:hover {
+  background: linear-gradient(90deg, rgba(139, 71, 137, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
 }
 
-@media (max-width: 700px) {
-  .accordion-item {
+.faq-question:active {
+  transform: scale(0.98);
+}
+
+.faq-question h3 {
+  font-size: 18px;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.faq-question i {
+  font-size: 18px;
+  color: #8b4789;
+  transition: transform 0.2s ease;
+  margin: 0;
+}
+
+.faq-answer {
+  padding: 0 30px 25px;
+  background: #fff;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Slide Fade Animation - FASTER */
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.15s ease-in;
+}
+
+.slide-fade-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* FAQ CTA */
+.faq-cta {
+  text-align: center;
+  padding: 50px 30px;
+  background: linear-gradient(135deg, rgba(139, 71, 137, 0.05), rgba(212, 175, 55, 0.05));
+  border-radius: 20px;
+}
+
+.faq-cta h2 {
+  font-size: 32px;
+  color: #2c2c2c;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.faq-cta p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #25d366 0%, #20c75a 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.3);
+}
+
+.btn-contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
+}
+
+.btn-contact i {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeIn 0.6s ease-out 0.2s backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .faq-hero {
+    padding: 80px 20px 60px;
+  }
+
+  .faq-hero h1 {
+    font-size: 32px;
+  }
+
+  .faq-hero p {
+    font-size: 18px;
+  }
+
+  .faq-section {
+    padding: 60px 15px;
+  }
+
+  .faq-question {
+    padding: 20px;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px;
+  }
+
+  .faq-answer p {
+    font-size: 15px;
+  }
+
+  .faq-cta {
+    padding: 35px 20px;
+  }
+
+  .faq-cta h2 {
+    font-size: 26px;
+  }
+
+  .faq-cta p {
+    font-size: 16px;
+  }
+
+  .btn-contact {
     width: 90%;
+    max-width: 320px;
+    justify-content: center;
   }
 }
 </style>

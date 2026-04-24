@@ -1,27 +1,53 @@
 <template>
-  <hr class="sectionLine" />
-  <section class="how-it-works-1">
-    <div class="secondary-fixed-width default-section-padding sectionLine">
-      <div class="text-center">
-        <h2 class="title-font mb-4">Create Your Website In 2 Easy Steps</h2>
-      </div>
-      <div class="big-steps-wrapper">
-        <div class="row p-1 m-0 mb-2">
-          <div class="col-6 text-center p-1">
+  <section class="how-it-works-section">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Get your stunning digital invitation in just 3 simple steps</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
             <svg class="icon">
               <use xlink:href="#choose-einvite-icon"></use>
             </svg>
-            <p class="icontitle-font pt-3">Choose design</p>
           </div>
-          <div class="col-6 text-center p-1">
+          <h3>Choose Your Design</h3>
+          <p>Browse our beautiful collection and pick a template that matches your style and celebration</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
             <svg class="icon">
               <use xlink:href="#add-details-icon"></use>
             </svg>
-            <p class="icontitle-font pt-3">Share details</p>
           </div>
+          <h3>Share Your Details</h3>
+          <p>Tell us about your special day - event details, photos, and personal touches that make it yours</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <i class="fa-solid fa-qrcode fa-4x" style="color: #8b4789;"></i>
+          </div>
+          <h3>Receive & Share</h3>
+          <p>Get your beautiful invitation with QR code in 24-48 hours. Share digitally or print with QR!</p>
         </div>
       </div>
-      <div v-on:click="scrollTo('footerContainer')" class="text-center pt-3 getStrtedbtn cursor-pointer"><a class="">Contact Us</a></div>
+
+      <div class="cta-section">
+        <p class="cta-text">Ready to create your perfect invitation?</p>
+        <div class="cta-actions">
+          <a href="https://wa.me/917411242726?text=Hi!%20I'm%20ready%20to%20start%20my%20digital%20wedding%20invitation%20journey.%20Can%20you%20guide%20me%20through%20the%20process?" target="_blank" rel="noopener noreferrer" class="btn-get-started">
+            <i class="fa-brands fa-whatsapp"></i> Start Your Journey Today
+          </a>
+          <p class="trust-text">
+            <i class="fa-solid fa-check-circle"></i> No commitment required • Free consultation
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -119,42 +145,237 @@ export default {
 };
 </script>
 
-<style>
-.getStrtedbtn a {
-  text-decoration: none;
+<style scoped>
+.how-it-works-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #fff 0%, #f9f9f9 100%);
 }
 
-.getStrtedbtn a {
-  padding: 8px 12px;
-  font-size: 16px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8b4789, #d4af37);
+  margin: 20px auto 0;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 55px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 55px;
+}
+
+.step-card {
+  position: relative;
+  background: #fff;
+  padding: 32px 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(139, 71, 137, 0.2);
+}
+
+.step-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #8b4789 0%, #a876aa 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(139, 71, 137, 0.3);
+}
+
+.step-icon {
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.2s ease;
+}
+
+.step-card:hover .icon {
+  transform: scale(1.08);
+}
+
+.step-card h3 {
+  font-size: 22px;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.step-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 45px 20px;
+  background: linear-gradient(135deg, rgba(139, 71, 137, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.cta-text {
+  font-size: 22px;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.btn-get-started {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 38px;
+  background: linear-gradient(135deg, #25d366 0%, #20c75a 100%);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
-  border-radius: 25px;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.3);
 }
 
-.getStrtedbtn a:hover {
-  color: #fff;
-  background-color: #5c636a;
-  border-color: #565e64;
-  /* border: 3px solid rgb(139, 14, 31); */
+.btn-get-started:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
 }
 
-.sectionLine {
-  color: black;
-  /* border-bottom: 2px solid black; */
+.btn-get-started i {
+  font-size: 20px;
+  margin: 0;
 }
 
-@media only screen and (max-width: 480px) {
-  /* Adjust the width and height of icons to 80x80 */
-  .icon {
-    width: 80px;
-    height: 80px;
+.trust-text {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.trust-text i {
+  color: #25d366;
+  margin: 0;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .how-it-works-section {
+    padding: 60px 0;
   }
 
-  .getStrtedbtn a {
-    font-size: 18px;
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .step-card {
+    padding: 25px 18px;
+  }
+
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .step-card h3 {
+    font-size: 19px;
+  }
+
+  .step-card p {
+    font-size: 14px;
+  }
+
+  .cta-section {
+    padding: 35px 18px;
+  }
+
+  .cta-text {
+    font-size: 20px;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-get-started {
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .trust-text {
+    margin-top: 0;
+    font-size: 12px;
   }
 }
 </style>
