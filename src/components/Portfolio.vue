@@ -88,25 +88,25 @@ export default {
           name: "Traditional Charm",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/3.jpg"),
-          link: "https://webcard-2.netlify.app/"
+          link: "https://ranbir-weds-aliya.netlify.app/"
         },
         {
           name: "Floral Dreams",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/4.jpg"),
-          link: "https://meenaz-weds-nabeela.netlify.app/"
+          link: "https://webcard-2.netlify.app/"
         },
         {
           name: "Golden Celebration",
           category: "Engagement",
           thumbnail: require("../assets/CarousalPics/5.jpg"),
-          link: "https://webcard-2.netlify.app/"
+          link: "https://meenaz-weds-nabeela.netlify.app/"
         },
         {
           name: "Vintage Love",
           category: "Anniversary",
           thumbnail: require("../assets/CarousalPics/6.webp"),
-          link: "https://meenaz-weds-nabeela.netlify.app/"
+          link: "https://ranbir-weds-aliya.netlify.app/"
         },
         {
           name: "Eternal Bond",
