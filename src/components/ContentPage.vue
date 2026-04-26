@@ -124,49 +124,49 @@ export default {
           name: "Royal Elegance",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/1.jpg"),
-          link: "https://webcard-2.netlify.app/"
+          link: "https://ranbir-weds-aliya.netlify.app/"
         },
         {
           name: "Modern Romance",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/2.jpg"),
-          link: "https://meenaz-weds-nabeela.netlify.app/"
+          link: "https://webcard-2.netlify.app/"
         },
         {
           name: "Traditional Charm",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/3.jpg"),
-          link: "https://ranbir-weds-aliya.netlify.app/"
+          link: "https://meenaz-weds-nabeela.netlify.app/"
         },
         {
           name: "Floral Dreams",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/4.jpg"),
-          link: "https://webcard-2.netlify.app/"
+          link: "https://ranbir-weds-aliya.netlify.app/"
         },
         {
           name: "Golden Celebration",
           category: "Engagement",
           thumbnail: require("../assets/CarousalPics/5.jpg"),
-          link: "https://meenaz-weds-nabeela.netlify.app/"
+          link: "https://webcard-2.netlify.app/"
         },
         {
           name: "Vintage Love",
           category: "Anniversary",
           thumbnail: require("../assets/CarousalPics/6.webp"),
-          link: "https://ranbir-weds-aliya.netlify.app/"
+          link: "https://meenaz-weds-nabeela.netlify.app/"
         },
         {
           name: "Eternal Bond",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/7.webp"),
-          link: "https://webcard-2.netlify.app/"
+          link: "https://ranbir-weds-aliya.netlify.app/"
         },
         {
           name: "Blissful Union",
           category: "Wedding",
           thumbnail: require("../assets/CarousalPics/8.webp"),
-          link: "https://meenaz-weds-nabeela.netlify.app/"
+          link: "https://webcard-2.netlify.app/"
         }
       ]
     };
