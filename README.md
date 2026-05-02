@@ -1,6 +1,6 @@
-# webcardbiz
+# WebCard
 ## My Website
-https://iwedsite.netlify.app/
+https://my-webcard.netlify.app/
 ## Project setup
 ```
 npm install
