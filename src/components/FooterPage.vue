@@ -56,7 +56,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p class="copyright">© {{ currentYear }} Web Card. Crafted with <i class="fa-solid fa-heart"></i> by Faisal & Hassan. All Rights Reserved.</p>
+          <p class="copyright">© {{ currentYear }} Web Card. <br> Crafted with <i class="fa-solid fa-heart"></i> by Faisal & Hassan. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
